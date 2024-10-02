@@ -13,7 +13,7 @@ public class CycleWheat : MonoBehaviour
     public float _wheat;
     [SerializeField] private float _plusWheat;
     [SerializeField] private TextMeshProUGUI _countWheat;
-
+    [SerializeField] private float _multiplPeasant;
     CycleFeed cycleFeed;
     void Start()
     {
@@ -31,7 +31,7 @@ public class CycleWheat : MonoBehaviour
         }
         else
         {
-            _wheat += _plusWheat + cycleFeed._countFeedPeasant * cycleFeed._peasant;
+            _wheat += _plusWheat + _multiplPeasant * cycleFeed._peasant;
             _curentTime = _maxTime;
         }
         _countWheat.text = "ѕшеница: " + _wheat.ToString();
