@@ -133,7 +133,7 @@ public class CycleFeed : MonoBehaviour
             _peasant++;
             _addPeasant.interactable = true;
         }
-        _countFeed = _countFeedWarrior * _warrior;
+        _countFeed = _countFeedWarrior * _warrior + _countFeedPeasant * _peasant;
 
         
         _ClockPlusP.fillAmount = _timerPlusP / _maxTimerPlus;

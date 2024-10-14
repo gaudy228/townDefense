@@ -36,4 +36,6 @@ public class CycleWheat : MonoBehaviour
         }
         _countWheat.text = "ѕшеница: " + _wheat.ToString();
     }
+
+    
 }
